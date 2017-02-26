@@ -2,7 +2,7 @@
 
 Mise en graphes des données d'affaires judiciaires liées à la corruption
 
-Post Blog mtdp draft
+### Post Blog mtdp draft link
 
 https://docs.google.com/document/d/1DwO0pntgyaeBSQ3eomWMLDAVMhz3tUxeywGi2EUNCuk/edit?usp=sharing
 
