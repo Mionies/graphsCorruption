@@ -45,6 +45,12 @@ https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais_class%C3
 
 https://fr.wikipedia.org/wiki/R%C3%A9gion_fran%C3%A7aise
 
-trop de liens
+### Pad contenant la totalite des vertices et des liens utilises ailleurs
 
 https://mensuel.framapad.org/p/corruptionGraph
+
+### summaryGraph.py
+
+génère des histographes, graphes de distribution et un metagaphe basic à partir de données au format padagraph sur framapad
+
+todo: généraliser pour accepter tout ce qui est accepté par le parser botapad 
