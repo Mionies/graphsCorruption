@@ -1,8 +1,5 @@
 import sys
 import argparse
-from botapi import Botagraph, BotApiError
-from reliure.types import Text 
-
 from collections import namedtuple
 import codecs
 import requests
