@@ -60,12 +60,8 @@ todo: généraliser pour accepter tout ce qui est accepté par le parser botapad
 
 #### Usage
 
-g = SummaryGraph()
-
-g.parse(url)
-
-metagraph = g.meta(file_name)
-
-h = g.histo(v1,v2,e)
-
-d = g.distrib(v1,v2,record,e1,e2)
+* g = SummaryGraph()
+* g.parse(url)
+* metagraph = g.meta(file_name)
+* h = g.histo(v1,v2,e)
+* d = g.distrib(v1,v2,record,e1,e2)
