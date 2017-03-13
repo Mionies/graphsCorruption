@@ -1,6 +1,6 @@
 # graphsCorruption
 
-Mise en graphes des données d'affaires judiciaires liées à la corruption à travers 3 types de graphes
+Mise en graphes des données d'affaires judiciaires liées à la corruption à travers 3 types de graphes: metagraphs, histographs subgraphs
 
 ### Post Blog mtdp draft link
 
@@ -14,24 +14,11 @@ http://public.padagraph.io/graph/MetaGraphCorruption
 https://mensuel.framapad.org/p/metagraph
 
 ### Histograph Links
-#### Entité
-
-http://padagraph.io/graph/CasePercentageEntity
-
-https://mensuel.framapad.org/p/corruptionGraphPercentEntity
-
-#### Région
-
-http://padagraph.io/graph/CasePercentageRegion
-
-https://mensuel.framapad.org/p/corruptionGraphPercentRegion
-
-#### Secteur
-
-https://mensuel.framapad.org/p/corruptionGraphPercentTag
-
-#### Infraction
-
+Secteur:http://www.padagraph.io/graph/HistographSecteurCorruption
+Infraction: http://www.padagraph.io/graph/HistographInfractionCorruption
+Graph Entite: http://www.padagraph.io/graph/HistographEntiteCorruption
+Region: http://www.padagraph.io/graph/HistographRegionCorruption
+Entite http://www.padagraph.io/graph/HistographEntiteCorruption
 
 
 ### Distribution graphs Links
@@ -39,13 +26,7 @@ https://mensuel.framapad.org/p/corruptionGraphPercentTag
 
 ### Data Graph Links
 
-http://padagraph.io/graph/PersonInfraction
-
-### Données pour normaliser les histographes
-
-https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais_class%C3%A9s_par_population_et_superficie
-
-https://fr.wikipedia.org/wiki/R%C3%A9gion_fran%C3%A7aise
+http://www.padagraph.io/graph/InfractionRegionAffaire
 
 
 ### Pad contenant la totalite des vertices et des liens utilises ailleurs
@@ -60,8 +41,15 @@ todo: généraliser pour accepter tout ce qui est accepté par le parser botapad
 
 #### Usage
 
-* g = SummaryGraph()
-* g.parse(url)
-* metagraph = g.meta(file_name)
-* h = g.histo(v1,v2,e)
-* d = g.distrib(v1,v2,record,e1,e2)
+* h = SummaryGraph()
+* h.parse('https://mensuel.framapad.org/p/corruptionGraph')
+* h.show()
+
+* histograph = h.phisto('Personne','Région'.decode('utf-8'),'PersonRegion')
+* d = h.distrib('EntiteImpliquee','Infraction','Personne','PersonEntite','PersonInfraction')
+* subg = h.subgraph(['Personne','Région'.decode('utf-8'),'Infraction'])
+* meta = h.metagraph()
+* nh = h.norm_histo('Personne','Région'.decode('utf-8'),'Population','PersonRegion')
+
+* meta.writePad('output_file_prefix')
+* histograph.writePad('output_file_prefix')
