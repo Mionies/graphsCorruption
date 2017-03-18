@@ -2,10 +2,6 @@
 
 Mise en graphes des données d'affaires judiciaires liées à la corruption à travers 3 types de graphes: metagraphs, histographs subgraphs
 
-### Post Blog mtdp draft link
-
-https://docs.google.com/document/d/1DwO0pntgyaeBSQ3eomWMLDAVMhz3tUxeywGi2EUNCuk/edit?usp=sharing
-
 
 ### Metagraph Link
 
@@ -15,29 +11,45 @@ https://mensuel.framapad.org/p/metagraph
 
 ### Histograph Links
 Secteur:http://www.padagraph.io/graph/HistographSecteurCorruption
+
 Infraction: http://www.padagraph.io/graph/HistographInfractionCorruption
+
 Graph Entite: http://www.padagraph.io/graph/HistographEntiteCorruption
+
 Region: http://www.padagraph.io/graph/HistographRegionCorruption
+
 Entite http://www.padagraph.io/graph/HistographEntiteCorruption
 
 
 ### Distribution graphs Links
 
+Infraction par Secteur: http://www.padagraph.io/graph/DistributionInfractionparSecteur
 
-### Data Graph Links
+Secteur par Infraction: http://www.padagraph.io/graph/DistributionSecteurparInfraction
+
+Infraction par Région: http://www.padagraph.io/graph/DistributionInfractionparRegion
+
+Entité par Infraction: http://www.padagraph.io/graph/DistributionEntiteparInfraction
+
+Infraction par Entité: http://www.padagraph.io/graph/DistributionInfractionparEntité
+
+
+### Sous-graphes
 
 http://www.padagraph.io/graph/InfractionRegionAffaire
 
 
 ### Pad contenant la totalite des vertices et des liens utilises ailleurs
 
+http://www.padagraph.io/graph/GraphCorruptionToutesInfos
+
 https://mensuel.framapad.org/p/corruptionGraph
 
 ## summaryGraph.py
 
-génère des histographes, graphes de distribution et un metagaphe basic à partir de données au format padagraph sur framapad
+Génère des histographes, graphes de distribution des sous-graphes et un metagaphe basic à partir de données au format padagraph sur framapad
 
-todo: généraliser pour accepter tout ce qui est accepté par le parser botapad 
+TODO: généraliser pour accepter tout ce qui est accepté par le parser botapad 
 
 #### Usage
 
