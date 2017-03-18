@@ -1,6 +1,6 @@
 # graphsCorruption
 
-Mise en graphes des données d'affaires judiciaires liées à la corruption à travers 3 types de graphes: metagraphs, histographs subgraphs
+Mise en graphes des données d'affaires judiciaires liées à la corruption à travers 4 types de graphes: metagraphes, histographes, distribution d'une variable par rapport à une autre et sousgraphes
 
 
 ### Metagraph Link
